@@ -90,11 +90,12 @@ git config user.email "your-personal-email@example.com"
 
 ### Step 3: Set credential helper to not store globally
 ```bash
-# Use per-repository credentials
+# Disable credential storage for this repository only
+# This will prompt for credentials each time you push or pull
 git config credential.helper ""
 ```
 
-When you push or pull, you'll be prompted for your personal account credentials.
+When you push or pull, you'll be prompted for your personal account credentials each time.
 
 ## Method 4: Using GitHub CLI
 
@@ -129,6 +130,8 @@ Edit `~/.gitconfig`:
     email = your-work-email@company.com
 
 [credential]
+    # Use your system's credential helper (common options: manager-core, osxkeychain, wincred, store)
+    # Check yours with: git config --global credential.helper
     helper = manager-core
 
 # Personal repositories
