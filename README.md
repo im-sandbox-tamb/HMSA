@@ -16,6 +16,7 @@
 
 #### Git
 
+- [Switching from EMU to Personal Account](docs/switching-git-accounts.md)
 - [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
 - [git-scm](https://git-scm.com)
 - [Git Katas](https://github.com/praqma-training/gitkatas)
